@@ -16,6 +16,10 @@ int main()
     while (true)
     {
         led1 = !led1;
-//        thread_sleep_for(WAIT_TIME_MS);
+        const unsigned int num_loops =
+          SystemCoreClock / 4  // loops per second, with 4x fudge factor
+          / 1000  // loops per ms
+          * 500;  // go for 500ms
+        for (volatile unsigned int i = 0; i < num_loops; i++) ;
     }
 }
