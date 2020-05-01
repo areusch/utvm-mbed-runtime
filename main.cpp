@@ -10,6 +10,8 @@ DigitalOut led1(LED1);
 
 int main()
 {
+    led1 = 1;
+    asm volatile("bkpt");
     printf("This is the bare metal blinky example running on Mbed OS %d.%d.%d.\n", MBED_MAJOR_VERSION, MBED_MINOR_VERSION, MBED_PATCH_VERSION);
     printf("System Clock: %ld\n", SystemCoreClock);
 
