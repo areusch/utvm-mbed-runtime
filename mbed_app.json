@@ -6,7 +6,7 @@
           "platform.minimal-printf-enable-floating-point": 1,
           "platform.stdio-minimal-console-only": 0,
           "platform.stdio-buffered-serial": true,
-          "platform.stdio-baud-rate": 9600
+          "platform.stdio-baud-rate": 115200
       }
     }
 }
